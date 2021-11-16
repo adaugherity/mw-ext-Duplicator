@@ -23,6 +23,11 @@
  * @author Vitaliy Filippov <vitalif@mail.ru>
  */
 
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\Revision\SlotRecord;
+
+
 class SpecialDuplicator extends SpecialPage {
 
 	/**
@@ -300,6 +305,10 @@ class SpecialDuplicator extends SpecialPage {
 	 * @return bool
 	 */
 	protected function duplicate( $source, $dest, $includeHistory ) {
+
+		$services = MediaWikiServices::getInstance();
+		$revisionStore = $services->getRevisionStore();
+
 		if ( !$source->exists() || $dest->exists() ) {
 			# Source doesn't exist, or destination does
 			return 0;
@@ -310,15 +319,15 @@ class SpecialDuplicator extends SpecialPage {
 		$dbw->startAtomic( __METHOD__ );
 		$sid = $source->getArticleID();
 		# Create an article representing the destination page and save it
-		$destArticle = new Article( $dest );
-		$aid = $destArticle->insertOn( $dbw );
+		$destPage = WikiPage::factory( $dest );
 		# Perform the revision duplication
-		# An INSERT...SELECT here seems to fuck things up
+		$order_dir = $includeHistory ? 'ASC' : 'DESC';
 		$res = $dbw->select( 'revision', '*', [ 'rev_page' => $sid ], __METHOD__,
-			[ 'ORDER BY' => 'rev_timestamp DESC',
+			[ 'ORDER BY' => "rev_id $order_dir",
 				'LIMIT' => $includeHistory ? $config->get( 'DuplicatorRevisionLimit' ) : 1 ]
 		);
 		$comment = '';
+		$nr = false;
 		if ( $res ) {
 			foreach ( $res as $row ) {
 				if ( !$comment ) {
@@ -328,31 +337,51 @@ class SpecialDuplicator extends SpecialPage {
 						$row->rev_id
 						)->inContentLanguage()->text();
 				}
-				$values['rev_page'] = $aid;
-				$values['rev_text_id'] = $row->rev_text_id;
-				$values['rev_comment'] = $includeHistory ? $row->rev_comment : $comment;
-				$values['rev_user'] = $row->rev_user;
-				$values['rev_user_text'] = $row->rev_user_text;
-				$values['rev_timestamp'] = $row->rev_timestamp;
-				$values['rev_minor_edit'] = $row->rev_minor_edit;
-				$values['rev_deleted'] = $row->rev_deleted;
-				$dbw->insert( 'revision', $values, __METHOD__ );
+
+				$revision = $revisionStore->getRevisionById( $row->rev_id );
+				$currentUser = User::newFromId( $row->rev_actor );
+				if ( !$currentUser || !$currentUser->getId() ) {
+					$actorID = $revision->getUser() ? $revision->getUser()->getID() : '';
+					if ( $actorID ) {
+						$currentUser = User::newFromId( $actorID );
+					} else {
+						//fallback to current
+						$currentUser = $user;
+					}
+				}
+
+				$revComment = $revision->getComment( RevisionRecord::RAW );
+				$currentContent = $revision->getContent( SlotRecord::MAIN );
+
+				$savedRevision = $destPage->doEditContent(
+					$currentContent,
+					$includeHistory ? $revComment : $comment,
+					0,
+					false,
+					$currentUser ? $currentUser : null
+				);
+
+				if ( isset( $savedRevision->value['revision-record'] ) ) {
+					$nr = $savedRevision->value['revision-record'];
+				}
+
+				if ( $nr ) {
+					$destPage->updateRevisionOn( $dbw, $nr );
+				}
+				//change update time to old one
+				$dbw->update(
+					'revision',
+					['rev_timestamp' => $row->rev_timestamp],
+					['rev_id' => $nr->getId()]
+
+				);
 			}
 		}
-		# Update page record
-		$latest = $dbw->selectField( 'revision', 'MAX(rev_id)', [ 'rev_page' => $aid ], __METHOD__ );
-		$nr = Revision::newFromId( $latest );
-		if ( $includeHistory ) {
-			# Create a null revision with an explanation; do cache clearances, etc.
-			$destArticle->updateRevisionOn( $dbw, $nr );
-			$nr = Revision::newNullRevision( $dbw, $aid, $comment, true, $user );
-			$nid = $nr->insertOn( $dbw );
-		}
-		$destArticle->updateRevisionOn( $dbw, $nr );
-		$destArticle->doEditUpdates( $nr, $user, [ 'created' => true ] );
+		$destPage->doEditUpdates( $nr, $user, [ 'created' => true ] );
 		WikiPage::onArticleCreate( $dest );
+		$timeStamp = MWTimestamp::now( TS_MW );
 		$bot = $user->isAllowed( 'bot' );
-		RecentChange::notifyNew( $nr->getTimestamp(), $dest, true, $user, $comment, $bot );
+		RecentChange::notifyNew( ($nr ? $nr->getTimestamp() : $timeStamp), $dest, true, $user, $comment, $bot );
 		$dest->invalidateCache();
 		$dbw->endAtomic( __METHOD__ );
 		return $count;
