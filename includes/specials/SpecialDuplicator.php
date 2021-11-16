@@ -302,7 +302,7 @@ class SpecialDuplicator extends SpecialPage {
 	 * @param Title $source Title to duplicate
 	 * @param Title $dest Title to save to
 	 * @param bool $includeHistory Whether to copy full article history
-	 * @return bool
+	 * @return int number of revisions copied
 	 */
 	protected function duplicate( $source, $dest, $includeHistory ) {
 
@@ -329,6 +329,7 @@ class SpecialDuplicator extends SpecialPage {
 		$comment = '';
 		$nr = false;
 		if ( $res ) {
+			$count = $res->numRows();
 			foreach ( $res as $row ) {
 				if ( !$comment ) {
 					$comment = $this->msg(
