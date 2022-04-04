@@ -3,6 +3,7 @@
 		"authors": [
 			"Alireza",
 			"Armin1392",
+			"Beginneruser",
 			"Ebraminio"
 		]
 	},
@@ -28,5 +29,5 @@
 	"duplicator-source-notexist": "[[$1]] وجود ندارد. لطفاً عنوان یک صفحهٔ موجود را ارائه دهید.",
 	"duplicator-dest-invalid": "لطفاً یک عنوان مقصد معتبر ارائه دهید.",
 	"duplicator-dest-exists": "[[$1]] در حال حاضر وجود دارد. لطفاً عنوان مقصدی را ارائه دهید، که موجود نیست.",
-	"right-duplicate": "صفحات تکراری"
+	"right-duplicate": "صفحه‌های تکراری"
 }
