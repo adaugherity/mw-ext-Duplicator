@@ -15,7 +15,7 @@
 	"duplicator-source": "منبع:",
 	"duplicator-dest": "مقصد:",
 	"duplicator-dotalk": "تکثیر صفحهٔ بحث (اگر عملی باشد)",
-	"duplicator-dosubpages": "تکثیر صفحات زیرین ( اگر هر)",
+	"duplicator-dosubpages": "تکثیر زیرصفحه‌ها (اگر چیزی باشد)",
 	"duplicator-dohistory": "تکثیر سوابق کامل صفحه",
 	"duplicator-submit": "تکراری",
 	"duplicator-summary": "کپی شده از [[$1]]، تجدید نظر [[$2]]",
