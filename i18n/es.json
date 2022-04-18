@@ -3,6 +3,7 @@
 		"authors": [
 			"Benfutbol10",
 			"Crazymadlover",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Imre",
 			"Macofe",
@@ -31,5 +32,6 @@
 	"duplicator-source-notexist": "[[$1]] no existe. Proporciona el título de una página que exista.",
 	"duplicator-dest-invalid": "Proporciona un título de destino válido.",
 	"duplicator-dest-exists": "[[$1]] ya existe. Proporciona un título de destino que no exista.",
+	"action-duplicate": "páginas duplicadas",
 	"right-duplicate": "Duplicar páginas"
 }
