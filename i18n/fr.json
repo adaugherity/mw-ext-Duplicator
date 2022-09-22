@@ -24,13 +24,13 @@
 	"duplicator-success": "[[$1]] a été copié vers [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|version a été copiée|versions ont été copiées}}.",
 	"duplicator-success-talknotcopied": "La page de discussion n’a pas pu être copiée.",
-	"duplicator-failed": "La page n’a pas pu être dupliquée. Une erreur inconnue s’est produite.",
+	"duplicator-failed": "La page n’a pas pu être dupliquée.\nUne erreur inconnue s’est produite.",
 	"duplicator-failed-toolong": "[[$1]] n’a pas été dupliqué. Le titre de destination est trop long.",
 	"duplicator-failed-dest-exists": "[[$1]] n’a pas été dupliqué. La destination [[$2]] existe déjà.",
-	"duplicator-source-invalid": "Veuillez donner un nom valide pour la page.",
-	"duplicator-source-notexist": "[[$1]] n’existe pas. Veuillez donner le nom d’une page existante.",
-	"duplicator-dest-invalid": "Veuillez donner un nom valide pour la destination.",
-	"duplicator-dest-exists": "[[$1]] existe déjà. Veuillez donner le nom d’une page qui n’existe pas encore.",
+	"duplicator-source-invalid": "Veuillez donner un titre valide pour la page source.",
+	"duplicator-source-notexist": "[[$1]] n’existe pas. Veuillez donner le titre d’une page existante.",
+	"duplicator-dest-invalid": "Veuillez donner un titre valide pour la page de destination.",
+	"duplicator-dest-exists": "[[$1]] existe déjà. Veuillez donner un titre de page de destination qui n’existe pas encore.",
 	"action-duplicate": "dupliquer des pages",
-	"right-duplicate": "dupliquer des pages"
+	"right-duplicate": "Dupliquer des pages"
 }
