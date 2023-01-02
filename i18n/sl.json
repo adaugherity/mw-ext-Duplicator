@@ -6,6 +6,7 @@
 	},
 	"duplicator": "Podvoji stran",
 	"duplicator-toolbox": "Podvoji stran",
+	"duplicator-dest": "Cilj:",
 	"duplicator-submit": "Podvoji",
 	"duplicator-failed": "Strani ni mogoče podvojiti.\nPrišlo je do neznane napake."
 }
