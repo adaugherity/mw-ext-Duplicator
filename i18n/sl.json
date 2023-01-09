@@ -5,8 +5,27 @@
 		]
 	},
 	"duplicator": "Podvoji stran",
+	"duplicator-desc": "Ustvari neodvisne [[Special:Duplicate|kopije]] strani s celotnimi zgodovinami urejanja",
 	"duplicator-toolbox": "Podvoji stran",
+	"duplicator-header": "Ta stran omogoča popolno podvajanje strani z ustvarjanjem neodvisnih kopij vseh zgodovin.\nTo je uporabno za razcepitev strani idr.",
+	"duplicator-options": "Možnosti",
+	"duplicator-source": "Vir:",
 	"duplicator-dest": "Cilj:",
+	"duplicator-dotalk": "Podvoji pogovorno stran (če obstaja)",
+	"duplicator-dosubpages": "Podvojene podstrani (če obstajajo)",
+	"duplicator-dohistory": "Podvoji celotno zgodovino strani",
 	"duplicator-submit": "Podvoji",
-	"duplicator-failed": "Strani ni mogoče podvojiti.\nPrišlo je do neznane napake."
+	"duplicator-summary": "Kopirano iz [[$1]], redakcija [[$2]]",
+	"duplicator-success": "Stran [[$1]] je bil kopirana na [[$2]].",
+	"duplicator-success-revisions": "{{PLURAL:$1|Kopirana je bila|Kopirani sta bili|Kopirane so bile|Kopiranih je bilo}} $1 {{PLURAL:$1|redakcija|redakciji|redakcije|redakcij}}.",
+	"duplicator-success-talknotcopied": "Pogovorne strani ni bilo mogoče kopirati.",
+	"duplicator-failed": "Strani ni mogoče podvojiti.\nPrišlo je do neznane napake.",
+	"duplicator-failed-toolong": "Stran [[$1]] ni bila podvojen. Naslov cilja je predolg.",
+	"duplicator-failed-dest-exists": "Stran [[$1]] ni bila podvojena. Cilj [[$2]] že obstaja.",
+	"duplicator-source-invalid": "Navedite veljaven naslov vira.",
+	"duplicator-source-notexist": "Stran [[$1]] ne obstaja. Navedite naslov strani, ki obstaja.",
+	"duplicator-dest-invalid": "Navedite veljaven naslov cilja.",
+	"duplicator-dest-exists": "Stran [[$1]] že obstaja. Navedite naslov cilja, ki ne obstaja.",
+	"action-duplicate": "podvajanje strani",
+	"right-duplicate": "Podvajanje strani"
 }
