@@ -10,7 +10,9 @@
 	"duplicator-toolbox": "Dubliuoti šį puslapį",
 	"duplicator-options": "Parinktys",
 	"duplicator-source": "Šaltinis:",
+	"duplicator-dest": "Tikslas:",
 	"duplicator-dotalk": "Dubliuoti diskusijų puslapį (jei taikoma)",
+	"duplicator-dosubpages": "Dubliuoti polapius (jei yra)",
 	"duplicator-dohistory": "Dubliuoti pilną puslapio istoriją",
 	"duplicator-submit": "Dublioti",
 	"duplicator-success": "[[$1]] buvo nukopijuotas į [[$2]].",
@@ -22,5 +24,6 @@
 	"duplicator-source-notexist": "[[$1]] neegzistuoja. Prašome nurodyti egzistuojanti puslapio pavadinimą.",
 	"duplicator-dest-invalid": "Prašome nurodyti galimą tikslo pavadinimą.",
 	"duplicator-dest-exists": "[[$1]] jau egzistuoja. Prašome nurodyti tikslo pavadinimą, kuris neegzistuoja.",
+	"action-duplicate": "dubliuoti puslapius",
 	"right-duplicate": "Dubliuoti puslapius"
 }
