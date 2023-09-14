@@ -20,7 +20,7 @@
 	"duplicator-success-talknotcopied": "Фекер алышыу бите күсерелмәгән булған.",
 	"duplicator-failed": "Бит клонлаштырыла алмай. Билдәһеҙ хата.",
 	"duplicator-failed-toolong": "[[$1]] клонлаштырылмаған. Яңы исем бигерәк оҙон.",
-	"duplicator-failed-dest-exists": "[[$1]] клонлаштырылмаған.  [[$2]]Тәғәйенләнгән мәҡәлә бар",
+	"duplicator-failed-dest-exists": "[[$1]] клонлаштырылмаған. Тәғәйенләнешле мәҡәлә [[$2]] бар.",
 	"duplicator-source-invalid": "Төп мәҡәләнең дөрөҫ исемен индерегеҙ.",
 	"duplicator-source-notexist": "«[[$1]]» бите юҡ. Булған биттең исемен индерегеҙ."
 }
