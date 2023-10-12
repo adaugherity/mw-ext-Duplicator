@@ -28,5 +28,6 @@
 	"duplicator-source-notexist": "\"[[$1]]\" non existe. Achegue o título dunha páxina que exista.",
 	"duplicator-dest-invalid": "Achegue un título de destino válido.",
 	"duplicator-dest-exists": "\"[[$1]]\" xa existe. Achegue un título de destino que non exista.",
+	"action-duplicate": "duplicar páxinas",
 	"right-duplicate": "Duplicar páxinas"
 }
