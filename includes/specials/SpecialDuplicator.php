@@ -320,7 +320,7 @@ class SpecialDuplicator extends SpecialPage {
 		$dbw->startAtomic( __METHOD__ );
 		$sid = $source->getArticleID();
 		# Create an article representing the destination page and save it
-		$destPage = WikiPage::factory( $dest );
+		$destPage = $services->getWikiPageFactory()->newFromTitle( $dest );
 		# Perform the revision duplication
 		$order_dir = $includeHistory ? 'ASC' : 'DESC';
 		$res = $dbw->select( 'revision', '*', [ 'rev_page' => $sid ], __METHOD__,
