@@ -308,6 +308,7 @@ class SpecialDuplicator extends SpecialPage {
 
 		$services = MediaWikiServices::getInstance();
 		$revisionStore = $services->getRevisionStore();
+		$userFactory = $services->getUserFactory();
 
 		if ( !$source->exists() || $dest->exists() ) {
 			# Source doesn't exist, or destination does
@@ -332,43 +333,41 @@ class SpecialDuplicator extends SpecialPage {
 			$count = $res->numRows();
 			foreach ( $res as $row ) {
 				if ( !$comment ) {
-					$comment = $this->msg(
-						'duplicator-summary',
-						$source->getPrefixedText(),
-						$row->rev_id
-						)->inContentLanguage()->text();
+					$comment = CommentStoreComment::newUnsavedComment(
+						$this->msg(
+							'duplicator-summary',
+							$source->getPrefixedText(),
+							$row->rev_id
+							)->inContentLanguage()->text()
+						);
 				}
 
 				$revision = $revisionStore->getRevisionById( $row->rev_id );
-				$currentUser = User::newFromId( $row->rev_actor );
+
+				# try rev_actor first, then the revision object's user, then fall back to the session user
+				$currentUser = $userFactory->newFromActorId( $row->rev_actor );
 				if ( !$currentUser || !$currentUser->getId() ) {
-					$actorID = $revision->getUser() ? $revision->getUser()->getID() : '';
-					if ( $actorID ) {
-						$currentUser = User::newFromId( $actorID );
+					$revUserIdentity = $revision->getUser( RevisionRecord::RAW );
+					if ( $revUserIdentity ) {
+						$currentUser = $userFactory->newFromUserIdentity ( $revUserIdentity );
 					} else {
 						//fallback to current
-						$currentUser = $user;
+						$currentUser = RequestContext::getMain()->getUser();
 					}
 				}
 
 				$revComment = $revision->getComment( RevisionRecord::RAW );
 				$currentContent = $revision->getContent( SlotRecord::MAIN );
 
-				$savedRevision = $destPage->doEditContent(
-					$currentContent,
-					$includeHistory ? $revComment : $comment,
-					0,
-					false,
-					$currentUser ? $currentUser : null
-				);
+				$updater = $destPage->newPageUpdater( $currentUser );
+				$updater->setContent( SlotRecord::MAIN, $currentContent );
+				$updater->setRcPatrolStatus( RecentChange::PRC_PATROLLED );
 
-				if ( isset( $savedRevision->value['revision-record'] ) ) {
-					$nr = $savedRevision->value['revision-record'];
+				$nr = $updater->saveRevision( $includeHistory ? $revComment : $comment );
+				if ( !$nr || !$updater->wasSuccessful() ) {
+					return 0;
 				}
 
-				if ( $nr ) {
-					$destPage->updateRevisionOn( $dbw, $nr );
-				}
 				//change update time to old one
 				$dbw->update(
 					'revision',
