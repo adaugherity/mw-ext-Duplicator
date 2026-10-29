@@ -344,16 +344,20 @@ class SpecialDuplicator extends SpecialPage {
 
 				$revision = $revisionStore->getRevisionById( $row->rev_id );
 
-				# try rev_actor first, then the revision object's user, then fall back to the session user
-				$currentUser = $userFactory->newFromActorId( $row->rev_actor );
-				if ( !$currentUser || !$currentUser->getId() ) {
-					$revUserIdentity = $revision->getUser( RevisionRecord::RAW );
-					if ( $revUserIdentity ) {
-						$currentUser = $userFactory->newFromUserIdentity ( $revUserIdentity );
-					} else {
-						//fallback to current
-						$currentUser = RequestContext::getMain()->getUser();
+				if ( $includeHistory ) {
+					# try rev_actor first, then the revision object's user, then fall back to the session user
+					$currentUser = $userFactory->newFromActorId( $row->rev_actor );
+					if ( !$currentUser || !$currentUser->getId() ) {
+						$revUserIdentity = $revision->getUser( RevisionRecord::RAW );
+						if ( $revUserIdentity ) {
+							$currentUser = $userFactory->newFromUserIdentity ( $revUserIdentity );
+						} else {
+							//fallback to current
+							$currentUser = RequestContext::getMain()->getUser();
+						}
 					}
+				} else {
+					$currentUser = RequestContext::getMain()->getUser();
 				}
 
 				$revComment = $revision->getComment( RevisionRecord::RAW );
