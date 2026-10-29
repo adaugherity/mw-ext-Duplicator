@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "複製子頁（若果有）",
 	"duplicator-dohistory": "複製完整修改紀錄",
 	"duplicator-submit": "複製",
-	"duplicator-summary": "由[[$1]]嘅[[$2]]版本複製過嚟",
+	"duplicator-summary": "由[[$1]]嘅[[Special:PermanentLink/$2|$2]]版本複製過嚟",
 	"duplicator-success": "[[$1]]已經複製到[[$2]]。",
 	"duplicator-success-revisions": "$1個修訂已經複製。",
 	"duplicator-success-talknotcopied": "個討論頁唔能夠複製。",

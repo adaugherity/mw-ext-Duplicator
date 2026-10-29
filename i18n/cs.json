@@ -16,7 +16,7 @@
 	"duplicator-dotalk": "Duplikovat i diskusní stránku (pokud existuje)",
 	"duplicator-dohistory": "Duplikovat celou historii stránky",
 	"duplicator-submit": "Duplikovat",
-	"duplicator-summary": "Zkopírováno z [[$1]], revize [[$2]]",
+	"duplicator-summary": "Zkopírováno z [[$1]], revize [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] bylo zkopírováno do [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revize byla zkopírována|revize byly zkopírovány|revizí bylo zkopírováno}}.",
 	"duplicator-success-talknotcopied": "Nebylo možné zkopírovat diskuzní stránku",

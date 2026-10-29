@@ -19,7 +19,7 @@
 	"duplicator-dosubpages": "שכפל דפי משנה (אם קיים)",
 	"duplicator-dohistory": "שכפול היסטוריה מלאה של דף",
 	"duplicator-submit": "שכפול",
-	"duplicator-summary": "הועתק מ־[[$1]], גרסה [[$2]]",
+	"duplicator-summary": "הועתק מ־[[$1]], גרסה [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] הועתק ל[[$2]].",
 	"duplicator-success-revisions": "{{PLURAL:$1|הועתקה גרסה אחת|הועתקו $1 גרסאות}}.",
 	"duplicator-success-talknotcopied": "לא ניתן היה להעתיק את דף השיחה.",

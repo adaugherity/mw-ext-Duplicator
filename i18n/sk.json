@@ -14,7 +14,7 @@
 	"duplicator-dest": "Cieľ:",
 	"duplicator-dotalk": "Duplikovať aj diskusnú stránku (ak existuje)",
 	"duplicator-submit": "Duplikovať",
-	"duplicator-summary": "Skopírované z [[$1]], revízia [[$2]]",
+	"duplicator-summary": "Skopírované z [[$1]], revízia [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "Vytvorená kópia [[$1]] na [[$2]].",
 	"duplicator-success-revisions": "{{PLURAL:$1|Skopírovaná $1 revízia|Skopírované $1 revízie|Skopírovaných $1 revízií}}.",
 	"duplicator-success-talknotcopied": "Nebolo možné skopírovať diskusné stránky.",

@@ -15,7 +15,7 @@
 	"duplicator-dotalk": "Фекер алышыу битен клонлаштырырға (әгәр мөмкин булһа)",
 	"duplicator-dohistory": "Үҙгәртеүҙәр тарихын клонлаштырырға",
 	"duplicator-submit": "Клонлаштырырға",
-	"duplicator-summary": "[[$1]] мәҡәләһенең [[$2]] үҙгәртелгән күсермәһе",
+	"duplicator-summary": "[[$1]] мәҡәләһенең [[Special:PermanentLink/$2|$2]] үҙгәртелгән күсермәһе",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|үҙгәртеүе күсерелгән булған|үҙгәртеүҙәре күсерелгән булған}}.",
 	"duplicator-success-talknotcopied": "Фекер алышыу бите күсерелмәгән булған.",
 	"duplicator-failed": "Бит клонлаштырыла алмай. Билдәһеҙ хата.",

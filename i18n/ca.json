@@ -18,7 +18,7 @@
 	"duplicator-dest": "Destinació",
 	"duplicator-dotalk": "Duplica la pàgina de discussió (quan així es pugui)",
 	"duplicator-submit": "Duplica",
-	"duplicator-summary": "Copiat des de [[$1]], revisió [[$2]]",
+	"duplicator-summary": "Copiat des de [[$1]], revisió [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] s'ha copiat a [[$2]].",
 	"duplicator-success-revisions": "{{PLURAL:$1|S'ha copiat una revisió|S'han copiat $1 revisions}}.",
 	"duplicator-success-talknotcopied": "La pàgina de discussió no s'ha pogut copiar.",

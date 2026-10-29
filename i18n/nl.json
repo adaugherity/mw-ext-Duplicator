@@ -17,7 +17,7 @@
 	"duplicator-dosubpages": "Subpagina's dupliceren (indien aanwezig)",
 	"duplicator-dohistory": "Volledige paginageschiedenis dupliceren",
 	"duplicator-submit": "Kopiëren",
-	"duplicator-summary": "Gekopieerd van [[$1]], versie [[$2]]",
+	"duplicator-summary": "Gekopieerd van [[$1]], versie [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] is gekopieerd naar [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|versie|versies}} gekopieerd.",
 	"duplicator-success-talknotcopied": "De overlegpagina kon niet gekopieerd worden.",

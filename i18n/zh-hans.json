@@ -23,7 +23,7 @@
 	"duplicator-dosubpages": "重复的子页面 （如果存在）",
 	"duplicator-dohistory": "复制完整页面历史",
 	"duplicator-submit": "复制",
-	"duplicator-summary": "复制自[[$1]]的版本[[$2]]",
+	"duplicator-summary": "复制自[[$1]]的版本[[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]]已经复制到[[$2]]。",
 	"duplicator-success-revisions": "$1个版本已经复制。",
 	"duplicator-success-talknotcopied": "讨论页不能够复制。",

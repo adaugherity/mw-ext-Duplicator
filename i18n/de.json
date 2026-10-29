@@ -20,7 +20,7 @@
 	"duplicator-dosubpages": "Unterseiten duplizieren (falls verfügbar)",
 	"duplicator-dohistory": "Vollständige Versionsgeschichte duplizieren",
 	"duplicator-submit": "Seite duplizieren",
-	"duplicator-summary": "Kopiert von [[$1]], Version [[$2]]",
+	"duplicator-summary": "Kopiert von [[$1]], Version [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] wurde nach [[$2]] kopiert.",
 	"duplicator-success-revisions": "{{PLURAL:$1|1 Version wurde|$1 Versionen wurden}} dupliziert.",
 	"duplicator-success-talknotcopied": "Die Diskussionsseite konnte nicht dupliziert werden.",

@@ -11,6 +11,6 @@
 	"duplicator-source": "Çıme:",
 	"duplicator-dest": "Hedef:",
 	"duplicator-submit": "Kopya",
-	"duplicator-summary": "[[$1]] ra [[$2]] kopya ke",
+	"duplicator-summary": "[[$1]] ra [[Special:PermanentLink/$2|$2]] kopya ke",
 	"right-duplicate": "Pela keno kopya"
 }

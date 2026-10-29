@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Duplicar subpaginas (si existe)",
 	"duplicator-dohistory": "Duplicar le historia complete del pagina",
 	"duplicator-submit": "Duplicar",
-	"duplicator-summary": "Copiate ab [[$1]], version [[$2]]",
+	"duplicator-summary": "Copiate ab [[$1]], version [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] ha essite copiate verso [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|version|versiones}} ha essite copiate.",
 	"duplicator-success-talknotcopied": "Le pagina de discussion non poteva esser copiate.",

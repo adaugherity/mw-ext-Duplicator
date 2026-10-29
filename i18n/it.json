@@ -19,7 +19,7 @@
 	"duplicator-dosubpages": "Duplica le sottopagine (se ce ne sono)",
 	"duplicator-dohistory": "Duplica tutta la cronologia della pagina",
 	"duplicator-submit": "Duplica",
-	"duplicator-summary": "Copiata da [[$1]], versione [[$2]]",
+	"duplicator-summary": "Copiata da [[$1]], versione [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "La pagina [[$1]] è stata copiata in [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|versione copiata|versioni copiate}}.",
 	"duplicator-success-talknotcopied": "Impossibile copiare la pagina di discussione.",

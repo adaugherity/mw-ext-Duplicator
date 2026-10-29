@@ -18,7 +18,7 @@
 	"duplicator-dosubpages": "Клонировать подстраницы (если есть)",
 	"duplicator-dohistory": "Клонировать историю изменений",
 	"duplicator-submit": "Клонировать",
-	"duplicator-summary": "Копия ревизии [[$2]] статьи [[$1]]",
+	"duplicator-summary": "Копия ревизии [[Special:PermanentLink/$2|$2]] статьи [[$1]]",
 	"duplicator-success": "[[$1]] клонирована в [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|изменение было скопировано|изменения были скопированы|изменений было скопировано}}.",
 	"duplicator-success-talknotcopied": "Страница обсуждения не была скопирована.",

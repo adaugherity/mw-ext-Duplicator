@@ -22,7 +22,7 @@
 	"duplicator-dosubpages": "Дуплирај подстранице (уколико их има)",
 	"duplicator-dohistory": "Дуплирај целу историју странице",
 	"duplicator-submit": "Дуплирај",
-	"duplicator-summary": "Копирано са [[$1]], измена [[$2]]",
+	"duplicator-summary": "Копирано са [[$1]], измена [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] је ископиран у [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|измена је ископирана|измена је ископирано}}.",
 	"duplicator-success-talknotcopied": "Страна за разговор није могла бити ископирана.",

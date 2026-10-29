@@ -8,5 +8,5 @@
 	"duplicator-options": "Mga pilian",
 	"duplicator-source": "Ginikanan:",
 	"duplicator-dest": "Destinasyon:",
-	"duplicator-summary": "Kinopya sa [[$1]], revision [[$2]]"
+	"duplicator-summary": "Kinopya sa [[$1]], revision [[Special:PermanentLink/$2|$2]]"
 }

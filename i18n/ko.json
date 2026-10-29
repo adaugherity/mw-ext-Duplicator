@@ -16,7 +16,7 @@
 	"duplicator-dosubpages": "(있으면) 하위 문서 복제",
 	"duplicator-dohistory": "전체 문서 역사 복제",
 	"duplicator-submit": "복제",
-	"duplicator-summary": "[[$1]] 문서의 [[$2]] 판에서 복사함",
+	"duplicator-summary": "[[$1]] 문서의 [[Special:PermanentLink/$2|$2]] 판에서 복사함",
 	"duplicator-success": "[[$1]] 문서를 [[$2]] 문서로 복사했습니다.",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|판}}을 복사했습니다.",
 	"duplicator-success-talknotcopied": "토론 문서를 복사할 수 없습니다.",

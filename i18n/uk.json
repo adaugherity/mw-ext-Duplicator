@@ -18,7 +18,7 @@
 	"duplicator-dosubpages": "Дублювати підсторінки (якщо є)",
 	"duplicator-dohistory": "Дублювати всю сторінку історії",
 	"duplicator-submit": "Дублювати",
-	"duplicator-summary": "Скопійовано з [[$1]], перевірка [[$2]]",
+	"duplicator-summary": "Скопійовано з [[$1]], перевірка [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "<big>'''[[$1]] було скопійовано до [[$2]].'''</big>",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|версія|версії|версій}} скопійовано.",
 	"duplicator-success-talknotcopied": "Сторінку обговорення не було скопійовано.",

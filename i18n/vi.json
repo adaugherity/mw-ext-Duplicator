@@ -16,7 +16,7 @@
 	"duplicator-dosubpages": "Nhân bản các trang con (nếu có)",
 	"duplicator-dohistory": "Nhân bản lịch sử trang đầy đủ",
 	"duplicator-submit": "Nhân bản",
-	"duplicator-summary": "Được chép từ [[$1]], phiên bản [[$2]]",
+	"duplicator-summary": "Được chép từ [[$1]], phiên bản [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] đã được chép sang [[$2]].",
 	"duplicator-success-revisions": "Đã chép $1 phiên bản.",
 	"duplicator-success-talknotcopied": "Không thể chép trang thảo luận.",

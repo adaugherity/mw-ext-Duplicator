@@ -17,7 +17,7 @@
 	"duplicator-dosubpages": "Ënnersäiten duplizéieren (wann et der gëtt)",
 	"duplicator-dohistory": "Kompletten Historique vun der Säit duplizéieren",
 	"duplicator-submit": "Säit duplizéieren",
-	"duplicator-summary": "Vun [[$1]] kopéiert, Versioun [[$2]]",
+	"duplicator-summary": "Vun [[$1]] kopéiert, Versioun [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] gouf op [[$2]] kopéiert.",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|Versioun gouf|Versioune goufe}} kopéiert.",
 	"duplicator-success-talknotcopied": "D'Diskussiounssäit konnt net kopéiert ginn.",

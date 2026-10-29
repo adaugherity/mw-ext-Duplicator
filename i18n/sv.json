@@ -20,7 +20,7 @@
 	"duplicator-dosubpages": "Dubblera undersidor (om någon)",
 	"duplicator-dohistory": "Duplicera hela sidans historia",
 	"duplicator-submit": "Duplicera",
-	"duplicator-summary": "Kopierad från [[$1]], sidversion [[$2]]",
+	"duplicator-summary": "Kopierad från [[$1]], sidversion [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] kopierades till [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|sidversion|sidversioner}} kopierades.",
 	"duplicator-success-talknotcopied": "Diskussionssidan kunde inte dupliceras.",

@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Donn de Ongersigge met koppehre, wann_er doh sin.",
 	"duplicator-dohistory": "Donn de jannze vörreje Väsjohne vun dä Sigg verdubbelle.",
 	"duplicator-submit": "Kopeere!",
-	"duplicator-summary": "Kopehrt fun de Väsjohn [[$2]] vun dä Sigg „[[$1]]“",
+	"duplicator-summary": "Kopehrt fun de Väsjohn [[Special:PermanentLink/$2|$2]] vun dä Sigg „[[$1]]“",
 	"duplicator-success": "„[[$1]]“ es op „[[$2]]“ kopeet wode.",
 	"duplicator-success-revisions": "{{PLURAL:$1|Eijn Version es|$1 Versione sin|Kein Versione sin}} kopeet wode.",
 	"duplicator-success-talknotcopied": "De Klaafsigg kunnt nit kopeet wäde.",

@@ -20,7 +20,7 @@
 	"duplicator-dosubpages": "Dupliquer les sous-pages (s’il y en a)",
 	"duplicator-dohistory": "Dupliquer l’historique complet de la page",
 	"duplicator-submit": "Dupliquer",
-	"duplicator-summary": "Copié depuis [[$1]], version [[$2]]",
+	"duplicator-summary": "Copié depuis [[$1]], version [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] a été copié vers [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|version a été copiée|versions ont été copiées}}.",
 	"duplicator-success-talknotcopied": "La page de discussion n’a pas pu être copiée.",

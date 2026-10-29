@@ -21,7 +21,7 @@
 	"duplicator-dosubpages": "Salin subhalaman (jika ada)",
 	"duplicator-dohistory": "Salin riwayat lengkap halaman",
 	"duplicator-submit": "Salin",
-	"duplicator-summary": "Disalin dari [[$1]], revisi [[$2]]",
+	"duplicator-summary": "Disalin dari [[$1]], revisi [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] telah disalin ke [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revisi|revisi}} telah disalin.",
 	"duplicator-success-talknotcopied": "Halaman pembicaraan tidak dapat disalin.",

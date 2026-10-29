@@ -9,5 +9,5 @@
 	"duplicator-source": "Sumber:",
 	"duplicator-dest": "Tujuan:",
 	"duplicator-submit": "Dhuplikasi",
-	"duplicator-summary": "Tinurun saka [[$1]], révisi [[$2]]"
+	"duplicator-summary": "Tinurun saka [[$1]], révisi [[Special:PermanentLink/$2|$2]]"
 }

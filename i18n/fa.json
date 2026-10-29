@@ -18,7 +18,7 @@
 	"duplicator-dosubpages": "تکثیر زیرصفحه‌ها (اگر چیزی باشد)",
 	"duplicator-dohistory": "تکثیر سوابق کامل صفحه",
 	"duplicator-submit": "تکراری",
-	"duplicator-summary": "کپی شده از [[$1]]، تجدید نظر [[$2]]",
+	"duplicator-summary": "کپی شده از [[$1]]، تجدید نظر [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "<big>'''[[$1]] کپی شده در [[$2]].'''</big>",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revision was|revisions were}} کپی شده.",
 	"duplicator-success-talknotcopied": "صفحهٔ گفتگو نتوانست کپی شود.",

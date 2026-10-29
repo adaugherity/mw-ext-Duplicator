@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Dupliciraj podstranice (ako je moguće)",
 	"duplicator-dohistory": "Dupliciraj celu istoriju",
 	"duplicator-submit": "Dupliciraj",
-	"duplicator-summary": "Prekopirano sa [[$1]]; izmjena [[$2]]",
+	"duplicator-summary": "Prekopirano sa [[$1]]; izmjena [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "Stranica [[$1]] je iskopirana u [[$2]].",
 	"duplicator-success-revisions": "{{PLURAL:$1|Je iskopirana $1 izmjena|Su iskopirane $1 izmjene|Je iskopirano $1 izmjena}}.",
 	"duplicator-success-talknotcopied": "Stranica za razgovor nije se mogla iskopirati.",

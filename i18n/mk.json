@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Дуплирај потстраници (ако ги има)",
 	"duplicator-dohistory": "Дуплирај ја целата историја",
 	"duplicator-submit": "Дуплирај",
-	"duplicator-summary": "Прекопирано од [[$1]], преработка [[$2]]",
+	"duplicator-summary": "Прекопирано од [[$1]], преработка [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "Страницата [[$1]] е ископирана во [[$2]].",
 	"duplicator-success-revisions": "{{PLURAL:$1|Беше ископирана $1 преработка|Беа ископирани $1 преработки}}.",
 	"duplicator-success-talknotcopied": "Разговорната страница не можеше да се ископира.",

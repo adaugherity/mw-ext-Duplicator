@@ -16,7 +16,7 @@
 	"duplicator-dest": "Odredište:",
 	"duplicator-dotalk": "Dupliciraj stranicu za razgovor (ako je moguće)",
 	"duplicator-submit": "Dupliciraj",
-	"duplicator-summary": "Kopirano sa [[$1]]; ID izmjene [[$2]]",
+	"duplicator-summary": "Kopirano sa [[$1]]; ID izmjene [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] je kopirano na [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revizija je kopirana|revizije su kopirane|revizija je kopirano}}.",
 	"duplicator-success-talknotcopied": "Stranica za razgovor nije se mogla kopirati.",

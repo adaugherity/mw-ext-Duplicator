@@ -21,7 +21,7 @@
 	"duplicator-dosubpages": "Duplikowanie podstron (jeśli istnieją)",
 	"duplicator-dohistory": "Duplikowanie strony z pełną historią",
 	"duplicator-submit": "Duplikuj",
-	"duplicator-summary": "Skopiowano z [[$1]], wersja [[$2]]",
+	"duplicator-summary": "Skopiowano z [[$1]], wersja [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "Artykuł [[$1]] został skopiowany do [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|edycja została skopiowana|edycje zostały skopiowane|edycji zostało skopiowanych}}.",
 	"duplicator-success-talknotcopied": "Strona dyskusji nie mogła być skopiowana.",

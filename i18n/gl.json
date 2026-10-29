@@ -17,7 +17,7 @@
 	"duplicator-dosubpages": "Duplicar as subpáxinas (se hai algunha)",
 	"duplicator-dohistory": "Duplicar o historial da páxina ao completo",
 	"duplicator-submit": "Duplicar",
-	"duplicator-summary": "Copiado desde \"[[$1]]\", revisión [[$2]]",
+	"duplicator-summary": "Copiado desde \"[[$1]]\", revisión [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "\"[[$1]]\" copiouse en \"[[$2]]\".",
 	"duplicator-success-revisions": "{{PLURAL:$1|Copiouse|Copiáronse}} $1 {{PLURAL:$1|revisión|revisións}}.",
 	"duplicator-success-talknotcopied": "Non se puido copiar a páxina de conversa.",

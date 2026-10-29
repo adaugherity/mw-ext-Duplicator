@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Duplicar sub-páxines (si hai)",
 	"duplicator-dohistory": "Duplicar l'historial completu de la páxina",
 	"duplicator-submit": "Duplicar",
-	"duplicator-summary": "Copiao de [[$1]], revisión [[$2]]",
+	"duplicator-summary": "Copiao de [[$1]], revisión [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "<big>'''[[$1]] copióse a [[$2]].'''</big>",
 	"duplicator-success-revisions": "Se {{PLURAL:$1|copió|copiaron}} $1 {{PLURAL:$1|revisión|revisiones}}.",
 	"duplicator-success-talknotcopied": "Nun pudo copiase la páxina d'alderique.",

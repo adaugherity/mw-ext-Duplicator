@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Duplicate subpages (if any)",
 	"duplicator-dohistory": "Duplicate full page history",
 	"duplicator-submit": "Duplicate",
-	"duplicator-summary": "Copied from [[$1]], revision [[$2]]",
+	"duplicator-summary": "Copied from [[$1]], revision [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] was copied to [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revision was|revisions were}} copied.",
 	"duplicator-success-talknotcopied": "The talk page could not be copied.",

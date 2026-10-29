@@ -20,7 +20,7 @@
 	"duplicator-dosubpages": "下位ページを複製 (存在する場合)",
 	"duplicator-dohistory": "ページの履歴全体を複製",
 	"duplicator-submit": "複製",
-	"duplicator-summary": "[[$1]] の版 [[$2]] を複製",
+	"duplicator-summary": "[[$1]] の版 [[Special:PermanentLink/$2|$2]] を複製",
 	"duplicator-success": "[[$1]] を [[$2]] へ複製しました。",
 	"duplicator-success-revisions": "$1 個の{{PLURAL:$1|版}}を複製しました。",
 	"duplicator-success-talknotcopied": "{{int:talk}}ページは複製できませんでした。",

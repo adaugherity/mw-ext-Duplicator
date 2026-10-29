@@ -21,7 +21,7 @@
 	"duplicator-dosubpages": "Duplicar sub-páginas (se houver)",
 	"duplicator-dohistory": "Duplicar histórico completo de página",
 	"duplicator-submit": "Duplicar",
-	"duplicator-summary": "Copiado de [[$1]], revisão [[$2]]",
+	"duplicator-summary": "Copiado de [[$1]], revisão [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] foi copiada para [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revisão foi copiada|revisões foram copiadas}}.",
 	"duplicator-success-talknotcopied": "Não foi possível copiar a página de discussão.",

@@ -15,7 +15,7 @@
 	"duplicator-dosubpages": "Dupliche le sottopàggene (ce stonne)",
 	"duplicator-dohistory": "Dupliche 'u cunde comblete d'a pàgene",
 	"duplicator-submit": "Dupliche",
-	"duplicator-summary": "Copiate da [[$1]], revisione [[$2]]",
+	"duplicator-summary": "Copiate da [[$1]], revisione [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "<big>'''[[$1]] ha state copiate sus a [[$2]].'''</big>",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revisione ha state|revisiune onne state}} copiate.",
 	"duplicator-success-talknotcopied": "'A pàgene de le 'ngazzaminde non g'ha state copiate.",

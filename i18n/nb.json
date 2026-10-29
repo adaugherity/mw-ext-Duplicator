@@ -16,7 +16,7 @@
 	"duplicator-dosubpages": "Dupliser undersider (om noen)",
 	"duplicator-dohistory": "Dupliser hele sidehistorikken",
 	"duplicator-submit": "Kopier",
-	"duplicator-summary": "Kopiert fra [[$1]], sideversjon [[$2]]",
+	"duplicator-summary": "Kopiert fra [[$1]], sideversjon [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] ble kopiert til [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|sideversjon|sideversjoner}} ble kopiert.",
 	"duplicator-success-talknotcopied": "Diskusjonssiden kunne ikke kopieres.",

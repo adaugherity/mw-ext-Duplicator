@@ -13,7 +13,7 @@
 	"duplicator-dest": "Destinacion:",
 	"duplicator-dotalk": "Duplicar la pagina de discussion (se existís)",
 	"duplicator-submit": "Duplicar",
-	"duplicator-summary": "Copiat dempuèi [[$1]], revision [[$2]]",
+	"duplicator-summary": "Copiat dempuèi [[$1]], revision [[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]] es estat copiat cap a [[$2]].",
 	"duplicator-success-revisions": "$1 {{PLURAL:$1|revision es estada copiada|revisions son estadas copiadas}}.",
 	"duplicator-success-talknotcopied": "La pagina de discussion a pas pogut èsser copiada.",

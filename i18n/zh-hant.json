@@ -19,7 +19,7 @@
 	"duplicator-dosubpages": "複製子頁面 (若擁有)",
 	"duplicator-dohistory": "複製所有頁面歷史",
 	"duplicator-submit": "複製",
-	"duplicator-summary": "已從[[$1]]複製修訂[[$2]]",
+	"duplicator-summary": "已從[[$1]]複製修訂[[Special:PermanentLink/$2|$2]]",
 	"duplicator-success": "[[$1]]已複製至[[$2]]。",
 	"duplicator-success-revisions": "$1 個修訂已複製。",
 	"duplicator-success-talknotcopied": "討論頁面無法複製。",
