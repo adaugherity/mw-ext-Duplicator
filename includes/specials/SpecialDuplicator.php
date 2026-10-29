@@ -316,7 +316,7 @@ class SpecialDuplicator extends SpecialPage {
 		}
 		$config = $this->getConfig();
 		$user = $this->getUser();
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$sid = $source->getArticleID();
 		# Create an article representing the destination page and save it
